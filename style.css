@@ -19,36 +19,26 @@ body {
 	width: 100%;
 	height: 60px;
 	background-color: black;
-}
-
-.box{
-	display: flex;
+	align-items: center;
+  	justify-content: left;
 }
 
 #hi-ico{
 	color: white;
 	font-size: 2rem;
 	margin-left: 50px;
-	margin-top: 3%;
+	align-items: flex-end;
 }
 
 .hi-p{
 	color: white;
-	font-size: 1.5rem;
-	margin-left: 10px;
-	margin-top: 2.5%;
-}
-
-.hi-p2{
-	color: white;
-	font-size: 1.5rem;
-	margin-left: 50px;
-	margin-top: 2.5%;
+	align-items: center;
+	margin-left: 15px;
 }
 
 .header {
 	position: fixed;
-	top: 60px;
+	top: auto;
 	left: 0;
 	width: 100%;
 	padding: 1.3rem 10%;
@@ -109,11 +99,6 @@ body {
 	display: none;
 }
 
-@media (max-width: 1150px){
-	.header{
-		padding: 1.3rem 5%;
-	}
-}
 @media (max-width: 1000px){
 	.icons{
 		display: inline-flex;
@@ -129,6 +114,21 @@ body {
 
 	#check:checked~.icons #close-icon{
 		display: block;
+	}
+
+	.header-info{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.hi-p{
+		margin: 0;
+	}
+
+	#hi-ico{
+		margin-left: 0px;
+		margin-bottom: 5px;
+		margin-top: 5px;
 	}
 
 	.navbar{
