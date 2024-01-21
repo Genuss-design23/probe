@@ -26,6 +26,10 @@ body {
 	z-index: 100;
 }
 
+.logo{
+	width: 200px;
+}
+
 .header::before{
 	content: '';
 	position: absolute;
@@ -78,7 +82,6 @@ body {
 		padding: 1.3rem 5%;
 	}
 }
-
 @media (max-width: 1000px){
 	.icons{
 		display: inline-flex;
