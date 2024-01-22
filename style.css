@@ -36,9 +36,18 @@ body {
 	margin-left: 15px;
 }
 
+.height{
+	height: 2000px;
+}
+
+.navbar .active a{
+	font-weight: bold;
+	color: green;
+}
+
 .header {
-	position: fixed;
-	top: auto;
+	position: sticky;
+	top: 0;
 	left: 0;
 	width: 100%;
 	padding: 1.3rem 10%;
@@ -46,6 +55,9 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 100;
+	border: 3px solid transparent;
+  	border-image: linear-gradient(to bottom right, blue 0%, orange 25%, green 50%, cyan 75%, red 100%);
+  	border-image-slice: 1;
 }
 
 .logo{
@@ -71,19 +83,27 @@ body {
 	font-weight: 700;
 }
 
-.navbar a{
+.navbar{
+	display: flex;
+}
+
+.navbar .active a{
+	font-weight: 700;
+	color: orange;
+}
+
+.navbar a, .navbar div{
 	font-size: 1.6rem;
-	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
 	margin-left: 2.5rem;
 	transition: .5s;
+	color: #fff;
 }
 
 .navbar a:hover{
-	color: rgba(0, 0, 255, 1.0);
-	transition: .5s;
-	font-weight: bold;
+	color: orange;
+	transition: .3s;
 }
 
 #check{
